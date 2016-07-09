@@ -220,7 +220,27 @@
 						<button class="btn btn-sm btn-primary" id="businessOtherBtn">Other - Fully customizable</button>
 						<button class="btn btn-sm btn-default" id="busBackToL1">Back</button>
 					</div>
-					
+					<div id="pricingIBlog">
+						Blog
+					</div>
+					<div id="pricingIPortfolio">
+						Portfolio
+					</div>
+					<div id="pricingIOther">
+						Indv - Other
+					</div>
+					<div id="pricingBRedesign">
+						Redesign
+					</div>
+					<div id="priceBEcom">
+						Ecom
+					</div>
+					<div id="priceBBasic">
+						Basic
+					</div>
+					<div id="priceBOther">
+						Bus - Other
+					</div>
 				</div>
 			</div>
 			<hr>
@@ -321,6 +341,13 @@ $(document).ready( function () {
 	inAndOut('#businessBtn','#pricingBL2','#pricingL1')
 	inAndOut('#busBackToL1','#pricingL1','#pricingBL2')
 	inAndOut('#indBackToL1','#pricingL1','#pricingIL2')
+	inAndOut('#individualBlogBtn','#pricingIBlog','#pricingIL2')
+	inAndOut('#individualPortfolioBtn','#pricingIPortfolio','#pricingIL2')
+	inAndOut('#individualOtherBtn','#pricingIOther','#pricingIL2')
+	inAndOut('#businessRedesignBtn','#pricingBRedesign','#pricingBL2')
+	inAndOut('#businessEcomBtn','#pricingBEcom','#pricingBL2')
+	inAndOut('#businessBasicBtn','#pricingBBasic','#pricingBL2')
+	inAndOut('#businessOtherBtn','#pricingBOther','#pricingBL2')
 	/*
 	$('#individualBtn').on('click',function(){
 		$('#pricingL1').fadeOut().css('display','none')
