@@ -299,12 +299,12 @@ $(document).ready( function () {
         });
     }
 	$('#individualBtn').on('click',function(){
-		$('#pricingL1').css('display','none')
-		$('#pricingIL2').css('display','block')
+		$('#pricingL1').fadeOut().css('display','none')
+		$('#pricingIL2').fadeIn().css('display','block')
 	})
 	$('#businessBtn').on('click',function(){
-		$('#pricingL1').css('display','none')
-		$('#pricingBL2').css('display','block')
+		$('#pricingL1').fadeOut().css('display','none')
+		$('#pricingBL2').fadeIn().css('display','block')
 	})
 });
 
