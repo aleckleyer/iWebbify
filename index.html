@@ -204,10 +204,19 @@
 						<button class="btn btn-sm btn-primary" id="businessBtn">Business</button>
 					</div>
 					<div id="pricingIL2" style="display:none">
-						Indiv Stuff
+						<h4>What are you looking for?</h4>
+						<br>
+						<button class="btn btn-sm btn-primary" id="individualBlogBtn">Blog</button>
+						<button class="btn btn-sm btn-primary" id="individualPortfolioBtn">Portfolio</button>
+						<button class="btn btn-sm btn-primary" id="individualOtherBtn">Other - Fully customizable</button>
 					</div>
 					<div id="pricingBL2" style="display:none">
-						Busin Stuff
+						<h4>What are you looking for?</h4>
+						<br>
+						<button class="btn btn-sm btn-primary" id="businessRedesignBtn">Website Redesign</button>
+						<button class="btn btn-sm btn-primary" id="businessEcomBtn">E-commerce Site</button>
+						<button class="btn btn-sm btn-primary" id="businessBasicBtn">Basic Landing Page</button>
+						<button class="btn btn-sm btn-primary" id="businessOtherBtn">Other - Fully customizable</button>
 					</div>
 				</div>
 			</div>
@@ -298,6 +307,16 @@ $(document).ready( function () {
             if ( $form.validate() ) { register($form); }
         });
     }
+
+	function inAndOut(clicked,goingIn,goingOut){
+		$(clicked).on('click',function(){
+			$(goingOut).fadeOut().css('display','none')
+			$(goingIn).fadeIn().css('display','block')
+		})
+	}
+	inAndOut('#individualBtn','#pricingIL2','#pricingL1')
+	inAndOut('#businessBtn','#pricingBL2','#pricingL1')
+	/*
 	$('#individualBtn').on('click',function(){
 		$('#pricingL1').fadeOut().css('display','none')
 		$('#pricingIL2').fadeIn().css('display','block')
@@ -306,6 +325,7 @@ $(document).ready( function () {
 		$('#pricingL1').fadeOut().css('display','none')
 		$('#pricingBL2').fadeIn().css('display','block')
 	})
+	*/
 });
 
 function appendResult(userText , className, iconClass){
