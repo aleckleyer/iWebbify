@@ -197,10 +197,10 @@
             <hr>
 			<div class="row">
 				<div class="text-center">
-					<h4>Are you a...</h4>
+					<h4>Are you a(n)...</h4>
 					<br>
-					<button class="btn btn-sm btn-primary">Individual</button>
-					<button class="btn btn-sm btn-primary">Business</button>
+					<button class="btn btn-sm btn-primary" id="individualBtn">Individual</button>
+					<button class="btn btn-sm btn-primary" id="businessBtn">Business</button>
 				</div>
 			</div>
 			<hr>
@@ -290,6 +290,12 @@ $(document).ready( function () {
             if ( $form.validate() ) { register($form); }
         });
     }
+	$('#individualBtn').on('click',function(){
+		alert("YO indv was clicked")
+	})
+	$('#businessBtn').on('click',function(){
+		alert("YO business was clicked")
+	})
 });
 
 function appendResult(userText , className, iconClass){
