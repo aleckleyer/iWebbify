@@ -197,10 +197,18 @@
             <hr>
 			<div class="row">
 				<div class="text-center">
-					<h4>Are you a(n)...</h4>
-					<br>
-					<button class="btn btn-sm btn-primary" id="individualBtn">Individual</button>
-					<button class="btn btn-sm btn-primary" id="businessBtn">Business</button>
+					<div id="pricingL1">
+						<h4>Are you a(n)...</h4>
+						<br>
+						<button class="btn btn-sm btn-primary" id="individualBtn">Individual</button>
+						<button class="btn btn-sm btn-primary" id="businessBtn">Business</button>
+					</div>
+					<div id="pricingIL2" style="display:none">
+						Indiv Stuff
+					</div>
+					<div id="pricingBL2" style="display:none">
+						Busin Stuff
+					</div>
 				</div>
 			</div>
 			<hr>
@@ -291,10 +299,12 @@ $(document).ready( function () {
         });
     }
 	$('#individualBtn').on('click',function(){
-		alert("YO indv was clicked")
+		$('#pricingL1').css('display','none')
+		$('#pricingIL2').css('display','block')
 	})
 	$('#businessBtn').on('click',function(){
-		alert("YO business was clicked")
+		$('#pricingL1').css('display','none')
+		$('#pricingBL2').css('display','block')
 	})
 });
 
