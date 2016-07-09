@@ -209,7 +209,7 @@
 						<button class="btn btn-sm btn-primary" id="individualBlogBtn">Blog</button>
 						<button class="btn btn-sm btn-primary" id="individualPortfolioBtn">Portfolio</button>
 						<button class="btn btn-sm btn-primary" id="individualOtherBtn">Other - Fully customizable</button>
-						<a class="btn btn-sm btn-default" href="#pricingL1">Back</a>
+						<button class="btn btn-sm btn-default" id="indBackToL1">Back</button>
 					</div>
 					<div id="pricingBL2" style="display:none">
 						<h4>What are you looking for?</h4>
@@ -218,7 +218,7 @@
 						<button class="btn btn-sm btn-primary" id="businessEcomBtn">E-commerce Site</button>
 						<button class="btn btn-sm btn-primary" id="businessBasicBtn">Basic Landing Page</button>
 						<button class="btn btn-sm btn-primary" id="businessOtherBtn">Other - Fully customizable</button>
-						<a class="btn btn-sm btn-default" href="#pricingL1">Back</a>
+						<button class="btn btn-sm btn-default" id="busBackToL1">Back</button>
 					</div>
 					
 				</div>
@@ -319,7 +319,8 @@ $(document).ready( function () {
 	}
 	inAndOut('#individualBtn','#pricingIL2','#pricingL1')
 	inAndOut('#businessBtn','#pricingBL2','#pricingL1')
-	inAndOut('')
+	inAndOut('#busBackToL1','#pricingL1','#pricingBL2')
+	inAndOut('#indBackToL1','#pricingL1','#pricingIL2')
 	/*
 	$('#individualBtn').on('click',function(){
 		$('#pricingL1').fadeOut().css('display','none')
