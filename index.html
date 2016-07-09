@@ -209,6 +209,7 @@
 						<button class="btn btn-sm btn-primary" id="individualBlogBtn">Blog</button>
 						<button class="btn btn-sm btn-primary" id="individualPortfolioBtn">Portfolio</button>
 						<button class="btn btn-sm btn-primary" id="individualOtherBtn">Other - Fully customizable</button>
+						<button class="btn btn-sm btn-default" src="#pricingL1">Back</button>
 					</div>
 					<div id="pricingBL2" style="display:none">
 						<h4>What are you looking for?</h4>
@@ -217,7 +218,9 @@
 						<button class="btn btn-sm btn-primary" id="businessEcomBtn">E-commerce Site</button>
 						<button class="btn btn-sm btn-primary" id="businessBasicBtn">Basic Landing Page</button>
 						<button class="btn btn-sm btn-primary" id="businessOtherBtn">Other - Fully customizable</button>
+						<button class="btn btn-sm btn-default" src="#pricingL1">Back</button>
 					</div>
+					
 				</div>
 			</div>
 			<hr>
@@ -316,6 +319,7 @@ $(document).ready( function () {
 	}
 	inAndOut('#individualBtn','#pricingIL2','#pricingL1')
 	inAndOut('#businessBtn','#pricingBL2','#pricingL1')
+	inAndOut('')
 	/*
 	$('#individualBtn').on('click',function(){
 		$('#pricingL1').fadeOut().css('display','none')
