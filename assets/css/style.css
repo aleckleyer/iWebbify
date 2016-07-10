@@ -607,3 +607,7 @@ PRICING STYLES
     .db-pricing-eleven.popular .price {
         padding-top: 80px;
     }
+
+#pricingSection{
+  height:500px;
+}
